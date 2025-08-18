@@ -1,13 +1,21 @@
 import * as FileSystem from "expo-file-system";
-import { openVCard } from "expo-vcard-importer";
+import VCardImporter, { openVCard } from "expo-vcard-importer";
+import { useEffect } from "react";
 import { Button, SafeAreaView, ScrollView, Text, View } from "react-native";
 
 export default function App() {
+	useEffect(() => {
+		VCardImporter.addListener("onShare", () => {
+			console.log("onShare event triggered");
+		});
+	}, []);
+
 	const handleVCardOpen = async () => {
 		const path = FileSystem.cacheDirectory + "john-doe.vcf";
 		try {
 			await FileSystem.downloadAsync(
-				"https://www.w3.org/2002/12/cal/vcard-examples/john-doe.vcf",
+				//"https://www.w3.org/2002/12/cal/vcard-examples/john-doe.vcf",
+				"https://files.rumen.online/api/public/dl/umjHIAQz/Storage/Shared/contacts%20(1).vcf",
 				path,
 			);
 		} catch (error) {

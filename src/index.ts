@@ -8,3 +8,9 @@ import Module from "./ExpoVcardImporterModule";
 export function openVCard(path: string, name?: string): Promise<void> {
 	return Module.presentVCardFile(path, name);
 }
+
+export function onShare() {
+	return Module.addListener("onShare", () => {});
+}
+
+export default Module;
