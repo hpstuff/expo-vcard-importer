@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["ExpoVcardImporterModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.vcardimporter.ExpoVcardImporterModule"]
+  }
+}

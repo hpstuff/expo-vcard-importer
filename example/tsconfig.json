@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-vcard-importer": ["../src/index"],
+      "expo-vcard-importer/*": ["../src/*"]
+    }
+  }
+}
