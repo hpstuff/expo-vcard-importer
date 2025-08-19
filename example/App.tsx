@@ -14,8 +14,7 @@ export default function App() {
 		const path = FileSystem.cacheDirectory + "john-doe.vcf";
 		try {
 			await FileSystem.downloadAsync(
-				//"https://www.w3.org/2002/12/cal/vcard-examples/john-doe.vcf",
-				"https://files.rumen.online/api/public/dl/umjHIAQz/Storage/Shared/contacts%20(1).vcf",
+				"https://www.w3.org/2002/12/cal/vcard-examples/john-doe.vcf",
 				path,
 			);
 		} catch (error) {
