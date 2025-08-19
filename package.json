@@ -21,7 +21,10 @@
 		"expo-vcard-importer",
 		"ExpoVcardImporter"
 	],
-	"repository": "https://github.com/hpstuff/expo-vcard-importer",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hpstuff/expo-vcard-importer.git"
+	},
 	"bugs": {
 		"url": "https://github.com/hpstuff/expo-vcard-importer/issues"
 	},
