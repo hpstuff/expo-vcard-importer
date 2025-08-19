@@ -22,9 +22,6 @@
 		"ExpoVcardImporter"
 	],
 	"repository": "https://github.com/hpstuff/expo-vcard-importer",
-	"publishConfig": {
-		"@rumen.rusanov:registry": "https://npm.pkg.github.com"
-	},
 	"bugs": {
 		"url": "https://github.com/hpstuff/expo-vcard-importer/issues"
 	},
